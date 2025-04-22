@@ -14,8 +14,15 @@ echo 📁 Project folder: %PROJECT_DIR%
 cd /d %PROJECT_DIR%
 
 :: Check if Python file exists
-if not exist "py_to_exe-converter.py" (
-    echo ❌ Python file py_to_exe-converter.py not found in the folder!
+if not exist "app.py" (
+    echo ❌ Python file app.py not found in the folder!
+    pause
+    exit /b
+)
+
+:: Check if HTML file exists
+if not exist "templates\index.html" (
+    echo ❌ HTML file index.html not found in the templates folder!
     pause
     exit /b
 )
@@ -33,7 +40,7 @@ git add .
 
 :: Commit with a message
 echo 💬 Committing changes...
-git commit -m "Added py_to_exe-converter.py"
+git commit -m "Added app.py and index.html for Flask app"
 
 :: Set remote repository URL
 set REMOTE_URL=https://github.com/hiteshjangir8057/py_to_exe-converter.git
