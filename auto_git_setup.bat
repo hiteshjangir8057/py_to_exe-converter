@@ -5,7 +5,7 @@ echo ---------------------------------------------
 
 :: Set Git user details
 git config --global user.name "Hitesh Kumar Jangir"
-git config --global user.email "hiteshkumarjangir333@gmail.com"
+git config --global user.email "hiteshjangir6517@gmail.com"
 
 :: Set project directory
 set "PROJECT_DIR=C:\Users\HR\Downloads\Compressed\py_to_exe"
